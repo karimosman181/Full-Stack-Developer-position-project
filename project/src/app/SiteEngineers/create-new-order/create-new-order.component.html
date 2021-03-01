@@ -1,0 +1,104 @@
+<div [hidden]="submitted">
+<div class="header">
+  
+</div>
+
+<div class="row">
+  <div class="column side" ></div>
+  <div class="column middle" id= "newOrder">
+<div class="container">
+    <div >
+      <form (ngSubmit)="onSubmit()" #Form="ngForm">
+        <div class="form-group">
+          <label for="Id">Id</label><br>
+          <input type="number" class="form-control" id="Id"
+                 required
+                 [(ngModel)]="model.Id" name="Id">
+        </div>
+  
+        <div class="form-group">
+          <label for="OperationDescription">Operation Description</label>
+          <input type="text" class="form-control" id="OperationDescription" required
+                 [(ngModel)]="model.OperationDescription" name="OperationDescription">
+                
+        </div>
+  
+        <div class="form-group">
+            <label for="creationDate">creationDated</label><br>
+            <input type="date" class="form-control" id="creationDate"
+                   required
+                   [(ngModel)]="model.creationDate" name="creationDate">
+           
+          </div>
+          <div class="form-group">
+            <label for="StartDate">StartDate</label><br>
+            <input type="date" class="form-control" id="StartDate"
+                   required
+                   [(ngModel)]="model.StartDate" name="StartDate">
+           
+          </div>
+          <div class="form-group">
+            <label for="EndDate">End Date</label><br>
+            <input type="date" class="form-control" id="EndDate"
+                   required
+                   [(ngModel)]="model.EndDate" name="EndDate">
+            
+          </div>
+  
+        <button type="submit" class="success" [disabled]="!Form.form.valid">Submit</button><br>
+
+        <button type="button" class="reset" (click)="newHero()">reset</button>
+</form>
+</div>
+
+</div>
+<div class="column side"></div>
+</div>
+
+
+<div class="footer">
+
+</div>
+</div>
+</div>
+        <!---------------->
+
+        <div [hidden] ="submitted == false">
+
+          <div class="header">
+            <h2>You submitted the following:</h2>
+          </div>
+          
+          <div class="row">
+            <div class="column side" ></div>
+            <div class="column middle" id= "newOrder">
+            
+            
+              <div>Id : <br> {{ model.Id }}</div>
+            
+           
+              <div>OperationDescription : <br> {{ model.OperationDescription }}</div>
+            
+            
+              <div>progress : <br>{{ model.progress }}</div>
+
+              <div>creationDate : <br>{{ model.creationDate }}</div>
+
+              <div>StartDate : <br>{{ model.StartDate }}</div>
+
+              <div>EndDate : <br>{{ model.EndDate }}</div>
+            <br>
+            <button class="reset" (click)="submitted=false">Edit</button>
+            <button class="success" (click)="save()">save</button>
+          </div>
+        </div>
+        <div class="column side"></div>
+</div>
+
+
+<div class="footer">
+
+</div>
+
+
+       

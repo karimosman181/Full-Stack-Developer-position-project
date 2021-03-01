@@ -1,0 +1,51 @@
+#newOrder{
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 20px;
+    background-color: rgb(187, 185, 185);
+  height: inherit;
+    margin-bottom: 50px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .success {
+    width: 100%;
+    background-color: dodgerblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .success {
+    background-color: rgb(1, 73, 146);
+  }
+
+  .container{
+      padding:10px;
+  }
+  
+  .reset {
+    width: 100%;
+    background-color: dodgerblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .reset {
+    background-color: rgb(1, 73, 146);
+  }

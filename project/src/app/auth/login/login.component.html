@@ -1,0 +1,22 @@
+<div class="header">
+
+</div>
+
+<div class="row">
+  <div class="column side" ></div>
+  <div class="column middle" Id="login">
+    <h2 *ngIf="!authService.isLoggedIn" style = "margin-bottom: 10%;"> login as a Site Engineer</h2> 
+    <h1 *ngIf="authService.isLoggedIn" style = "margin-bottom: 10%;"> logout</h1>
+<p>
+  <button class="loginbutton" (click)="login()"  *ngIf="!authService.isLoggedIn"><span>Login</span></button>
+  <button class="loginbutton" (click)="logout()" *ngIf="authService.isLoggedIn"><span>Logout</span></button>
+</p>
+</div>
+<div class="column side"></div>
+</div>
+
+
+<div class="footer">
+
+</div>
+

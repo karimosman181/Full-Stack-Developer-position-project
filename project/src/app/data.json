@@ -1,0 +1,26 @@
+{
+    "Id": 1,
+    "creationDate" : "12/1/2018",
+    "OperationDescription" : "this operation is created for testing",
+    "StartDate" : "12/2/2018",
+    "EndDate": "12/2/2020",
+    "progress": 80,
+    "Detials" : [
+        {
+            "Description" : "this is the first item",
+            "location": "Beirut",
+            "progress": 60
+        },
+        {
+            "Description" : "this is the second item",
+            "location": "Beirut",
+            "progress": 70
+        },
+        {
+            "Description" : "this is the third item",
+            "location": "Beirut",
+            "progress": 30
+        }
+
+    ]
+}
